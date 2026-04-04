@@ -477,9 +477,10 @@ h4 {
 .plan-features {
     list-style: none;
     text-align: left;
-    margin: 0 auto var(--space-lg) auto;
+    margin: 1.5rem auto;
     flex-grow: 1;
-    max-width: fit-content;
+    max-width: 100%;
+    padding: 0;
 }
 
 .plan-card.featured {
@@ -527,14 +528,16 @@ h4 {
     text-align: left;
     margin-bottom: var(--space-lg);
     flex-grow: 1;
+    padding-left: 0;
 }
 
 .plan-features li {
     margin-bottom: 0.75rem;
     display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.6rem;
     font-size: 0.95rem;
+    line-height: 1.3;
 }
 
 .plan-features li .check {
@@ -775,13 +778,16 @@ h4 {
     background: white;
     border-radius: var(--radius-lg);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    padding: var(--space-md);
+    padding: 1.25rem;
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: 0.75rem;
     border: 1px solid rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
 }
 
 .social-card:hover {
@@ -798,9 +804,11 @@ h4 {
 .social-avatar {
     width: 48px;
     height: 48px;
+    flex-shrink: 0;
     border-radius: 50%;
     object-fit: cover;
-    border: 1.5px solid var(--primary-light);
+    border: 2px solid var(--primary-light);
+    display: block;
 }
 
 .social-meta {
