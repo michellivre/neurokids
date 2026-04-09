@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFERTA EXCLUSIVA - Atividades Cerebrais 2.0</title>
+    <link rel="icon" type="image/webp" href="assets/favicon.webp">
+    <link rel="stylesheet" href="style.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '989077889145785');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=989077889145785&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
+    <style>
+        .discount-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+            padding: 2rem 1rem;
+        }
+
+        .discount-card {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 2rem;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(234, 88, 12, 0.1);
+            border: 2px solid var(--cta);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .discount-badge {
+            background: var(--cta);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            animation: pulse-glow 2s infinite;
+        }
+
+        .discount-card h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .discount-card p {
+            font-size: 1.1rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+
+        .price-discount {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #F8FAFC;
+            border-radius: 1rem;
+        }
+
+        .old-price-line {
+            text-decoration: line-through;
+            color: #94a3b8;
+            font-size: 1.2rem;
+        }
+
+        .new-price-big {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--cta);
+            display: block;
+            margin-top: -0.5rem;
+        }
+
+        .timer-warning {
+            color: #ef4444;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        @media (max-width: 480px) {
+            .discount-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .discount-card h1 {
+                font-size: 1.8rem;
+            }
+
+            .new-price-big {
+                font-size: 2.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="discount-container">
+        <div class="discount-card reveal active">
+            <span class="discount-badge">🎁 PRESENTE ESPECIAL LIBERADO</span>
+            <h1>ESPERE! Não leve sua dúvida para casa.</h1>
+            <p>Percebi que você ainda não finalizou seu pedido. Queremos muito ajudar seu filho a se desenvolver, por
+                isso liberei um <strong>desconto único de 70%</strong> para você agora.</p>
+
+            <div class="price-discount">
+                <span class="old-price-line">De R$ 97,00</span>
+                <span class="new-price-big">R$ 19,90</span>
+                <p style="margin: 0; font-size: 0.9rem;">Única oportunidade. Acesso vitalício.</p>
+            </div>
+
+            <a href="https://checkout.payt.com.br/f4b8e7bdd25d1dfb3fcf4631e09b4204" class="btn btn-primary lg"
+                style="width: 100%;">SIM! QUERO APROVEITAR O DESCONTO</a>
+
+            <div class="timer-warning">
+                <span>⏱️ Esta oferta expira em:</span>
+                <span id="countdown-timer" class="timer-numbers"
+                    style="background: #fee2e2; color: #ef4444;">15:00</span>
+            </div>
+
+            <a href="index.html"
+                style="display: block; margin-top: 2rem; color: #94a3b8; text-decoration: none; font-size: 0.9rem;">Não,
+                prefiro pagar o preço cheio depois.</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
